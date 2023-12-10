@@ -1,0 +1,395 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    /* CSS Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+      }
+  
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 7px white;
+        height: 55px;
+      }
+  
+      h1 {
+        margin: 0;
+        height: 20px;
+        margin-top: 1px;
+      }
+  
+      nav {
+        background-color: #666;
+        padding: 10px;
+        text-align: center;
+      }
+  
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+  
+      main {
+        padding: 20px;
+      }
+  
+      .product {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+  
+      .product img {
+        max-width: 100%;
+      }
+  
+      footer {
+        background-color:#02262b;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        justify-content: space-around;
+        
+      }
+  /* CSS */
+
+.slideshow {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+.slideshow .navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slideshow .navigation button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slideshow .navigation button.active {
+  background-color: black;
+} 
+
+ 
+ 
+  
+
+input{
+  border-radius: 7px;
+  padding: 6px;
+  outline-offset: 2px;
+  outline-color: #25afc2;
+}
+.menu{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color:#02262b;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+.menu a{
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.center a:hover {
+  border-radius: 5px;
+  background-color: #02262b;
+  color:#30b2c4 ;
+}
+a:hover{
+  color: #25afc2;
+  
+}
+.center a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+i{
+  color: white;
+  margin: 4px;
+}
+.footer-basic {
+   /* padding:30px 0;  */
+  background-color:#ffffff;
+  color:#e9e0dd;
+  margin-top: 5px;
+
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+  color:#25afc2;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #e4dede;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  margin: 20px;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+  background-color:#09515a;
+  color: #02262b;
+  
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#e4dddd;
+  margin-bottom:0;
+}
+.gallery{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+figcaption {
+  margin: 0 auto;
+  margin-top: 2px;
+}
+a.bb{
+  text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+img:hover{
+transform: scale(1.1);
+transition: 0.4s;
+}
+h1 {
+  color: #0e0d0d;
+  
+  margin: 20px auto;
+  width: 450px;
+  font-size: 3rem;
+  text-align: center;
+  
+}
+
+img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+ border-radius: 10px;
+ margin: 15px;
+  transition-duration: 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+  transition: 1s;
+  
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.item{
+  width:80% ;
+padding: 11px; 
+  margin: 0 auto;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+
+figcaption{
+  padding: 17px;
+}
+.myButton {
+box-shadow: 0px 0px 0px 2px #9fb4f2;
+background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+background-color:#7892c2;
+border-radius:10px;
+border:1px solid #4e6096;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:19px;
+padding:12px 37px; 
+text-decoration:none;
+text-shadow:0px 1px 0px #283966;
+display: flex;
+justify-content: center;
+margin: 0 auto;
+width: 100px;
+}
+.myButton:hover {
+background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+background-color:#476e9e;
+}
+.myButton:active {
+position:relative;
+top:1px;
+color: #e5f7fa;
+
+}
+.column {
+float: left;
+
+  width: 31%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+margin-left: 25px ;
+ 
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.title {
+  color: grey;
+}
+@media (max-width:768px)
+{
+ .itemm{
+  width: auto;
+ }
+ .slideshow{
+  width: 100% !important;
+  margin: 0 auto;
+ }
+ .right{
+  display: none;
+ }
+ .gallery , .gallery-2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+ }
+ .column{
+  width: 100%;
+ }
+ .row{
+  display: flex;
+  flex-wrap: wrap;
+ }
+}
+
+
+
+
+
+
